@@ -2,7 +2,8 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { MoonIcon, SunIcon } from "./assets";
+import { IoMdMoon } from "react-icons/io";
+import { FaSun } from "react-icons/fa";
 
 export function ThemeSwitcher() {
     const [mounted, setMounted] = useState(false)
@@ -17,8 +18,18 @@ export function ThemeSwitcher() {
     return (
         <div >
             {theme === "dark" ?
-                <button className="p-1 rounded-full border-2 border-white" onClick={() => setTheme('light')}><SunIcon /></button> :
-                <button className="p-1 rounded-full border-2 border-black" onClick={() => setTheme('dark')}><MoonIcon /></button>
+                <button
+                    className="p-1 rounded-full border-2 border-[var(--secondary-text)]"
+                    onClick={() => setTheme('light')}
+                >
+                    <FaSun color="var(--secondary-text)" />
+                </button> :
+                <button
+                    className="p-1 rounded-full border-2 border-[var(--secondary-text)]"
+                    onClick={() => setTheme('dark')}
+                >
+                    <IoMdMoon color="var(--secondary-text)" />
+                </button>
             }
         </div>
     )
