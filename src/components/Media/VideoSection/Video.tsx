@@ -6,6 +6,7 @@ import { FaDownload, FaRegHeart } from 'react-icons/fa'
 import { MdOutlineCollectionsBookmark } from 'react-icons/md'
 import { CldVideoPlayer } from 'next-cloudinary'
 import 'next-cloudinary/dist/cld-video-player.css';
+import { useRouter } from 'next/navigation';
 
 export default function Video(props: {
   isControls: boolean;
@@ -13,14 +14,16 @@ export default function Video(props: {
   src: string
 }) {
 
-  const { isControls, title, src } = props;
+  const { title, src } = props;
 
   const videoRef = useRef<HTMLVideoElement>(null);
+  const router = useRouter();
 
   return (
     <div
       onMouseEnter={() => videoRef.current?.play()}
       onMouseLeave={() => videoRef.current?.pause()}
+      onClick={() => router.push(`/videos/${src}`)}
       className="group relative overflow-hidden"
     >
       <div className='w-full p-2 absolute top-0 left-0 z-[11] opacity-0 transition duration-500 group-hover:opacity-100 flex items-center gap-2'>
@@ -33,7 +36,7 @@ export default function Video(props: {
         </Button>
       </div>
       <CldVideoPlayer
-      className='min-w-full md:min-w-[22.5rem]'
+        className='min-w-full md:min-w-[22.5rem]'
         width={480}
         height={0}
         src={src}

@@ -5,11 +5,11 @@ export const navData = {
     exploreMenu: [
         {
             label: "Discover Photos",
-            href: "/"
+            href: "/images"
         },
         {
             label: "Discover Videos",
-            href: "/"
+            href: "/videos"
         },
         {
             label: "Popular Searches",
