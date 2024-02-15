@@ -1,6 +1,7 @@
 "use client";
 import { Tab, Tabs } from '@nextui-org/tabs'
 import React from 'react'
+import Images from './Images';
 
 export default function UserProfileTabs() {
     return (
@@ -20,7 +21,7 @@ export default function UserProfileTabs() {
                 key="images"
                 title="Images"
             >
-                Images
+                <Images />
             </Tab>
             <Tab
                 key="videos"
