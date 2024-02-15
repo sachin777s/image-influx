@@ -1,0 +1,37 @@
+import UserProfileTabs from "@/components/UserProfileTabs";
+import { Avatar } from "@nextui-org/avatar";
+import { Button } from "@nextui-org/button";
+import { MdModeEdit } from "react-icons/md";
+
+export default function Profile({ params }: any) {
+  return (
+    <section className="flex items-center flex-col">
+      <Avatar
+        className="w-32 h-32"
+        src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+      />
+      <span className="mt-6 text-4xl sm:text-5xl">Sachin Kumar</span>
+      <Button radius="sm" className="mt-4 text-xl py-4 bg-[var(--primary-color)] text-white">
+        <MdModeEdit />
+        Edit Profile
+      </Button>
+      <div className="mt-8 mb-0 md:mb-12 flex items-center justify-center gap-6 md:gap-12">
+        <div className="flex flex-col items-center">
+          <span className="text-base text-center">Date</span>
+          <span className="text-[var(--secondary-text)] text-xl">12 Jul</span>
+        </div>
+        <span className="block h-[30px] w-[2px] bg-[var(--secondary-text)]"></span>
+        <div className="flex flex-col items-center">
+          <span className="text-base">Likes</span>
+          <span className="text-[var(--secondary-text)] text-xl">54K</span>
+        </div>
+        <span className="block h-[30px] w-[2px] bg-[var(--secondary-text)]"></span>
+        <div className="flex flex-col items-center">
+          <span className="text-base">Downloads</span>
+          <span className="text-[var(--secondary-text)] text-xl">43K</span>
+        </div>
+      </div>
+      <UserProfileTabs />
+    </section>
+  )
+}
