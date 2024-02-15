@@ -2,6 +2,7 @@
 import { Tab, Tabs } from '@nextui-org/tabs'
 import React from 'react'
 import Images from './Images';
+import Videos from './Videos';
 
 export default function UserProfileTabs() {
     return (
@@ -27,7 +28,7 @@ export default function UserProfileTabs() {
                 key="videos"
                 title="Videos"
             >
-                Videos
+                <Videos />
             </Tab>
             <Tab
                 key="statistics"
