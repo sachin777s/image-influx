@@ -3,6 +3,7 @@ import { Tab, Tabs } from '@nextui-org/tabs'
 import React from 'react'
 import Images from './Images';
 import Videos from './Videos';
+import Followings from './Followings';
 
 export default function UserProfileTabs() {
     return (
@@ -13,9 +14,9 @@ export default function UserProfileTabs() {
             aria-label="Dynamic tabs"
             classNames={{
                 tabList: "gap-6 w-full relative rounded-none p-0 border-b border-divider",
-                cursor: "w-full bg-[#22d3ee]",
+                cursor: "w-full bg-[var(--primary-color)]",
                 tab: "max-w-fit px-0 h-12",
-                tabContent: "group-data-[selected=true]:text-[#06b6d4]"
+                tabContent: "group-data-[selected=true]:green"
             }}
         >
             <Tab
@@ -45,8 +46,9 @@ export default function UserProfileTabs() {
             <Tab
                 key="followings"
                 title="Followings"
+                className='w-full'
             >
-                Followings
+                <Followings />
             </Tab>
         </Tabs>
     )
