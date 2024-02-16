@@ -33,12 +33,6 @@ export default function UserProfileTabs() {
                 <Videos />
             </Tab>
             <Tab
-                key="statistics"
-                title="Statistics"
-            >
-                Statistics
-            </Tab>
-            <Tab
                 key="followers"
                 title="Followers"
                 className='w-full'
