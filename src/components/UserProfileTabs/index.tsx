@@ -4,6 +4,7 @@ import React from 'react'
 import Images from './Images';
 import Videos from './Videos';
 import Followings from './Followings';
+import Followers from './Followers';
 
 export default function UserProfileTabs() {
     return (
@@ -40,8 +41,9 @@ export default function UserProfileTabs() {
             <Tab
                 key="followers"
                 title="Followers"
+                className='w-full'
             >
-                Followers
+                <Followers />
             </Tab>
             <Tab
                 key="followings"
