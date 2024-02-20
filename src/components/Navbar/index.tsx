@@ -6,9 +6,6 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
 } from "@nextui-org/navbar";
 import {
   Dropdown,
@@ -22,8 +19,15 @@ import Link from "next/link";
 import { Avatar } from "@nextui-org/avatar";
 import { FaCaretDown } from "react-icons/fa";
 import { FaUpload } from "react-icons/fa6";
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
+
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
 export default function Navbar() {
+
+  const { isAuthenticated, isLoading } = useKindeBrowserClient();
+
   return (
     <AppNavbar maxWidth="2xl" isBordered className="min-w-0">
       <NavbarBrand>
@@ -34,7 +38,7 @@ export default function Navbar() {
       </NavbarBrand>
       <NavbarContent justify="end">
         <NavbarItem>
-          <ThemeSwitcher/>
+          <ThemeSwitcher />
         </NavbarItem>
         <NavbarItem>
           <Dropdown placement="bottom-end">
@@ -54,44 +58,51 @@ export default function Navbar() {
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
-        <NavbarItem className="hidden">
-          <Dropdown placement="bottom-end">
-            <DropdownTrigger>
-              <Avatar
-                as="button"
-                className="transition-transform"
-                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-              />
-            </DropdownTrigger>
-            <DropdownMenu
-              aria-label="Profile Actions"
-              variant="flat"
-              topContent={
-                <div className="pl-2">
-                  <p className="font-semibold">Signed in as</p>
-                  <p className="font-semibold">zoey@example.com</p>
-                </div>
-              }
-            >
 
-              {
-                navData.userMenu.map((item, index) =>
-                  <DropdownItem key={index}>
-                    <Link href={item.href}>{item.label}</Link>
-                  </DropdownItem>
-                )
-              }
-            </DropdownMenu>
-          </Dropdown>
+
+        <NavbarItem className="">
+          {
+            isAuthenticated
+              ? <Dropdown placement="bottom-end">
+                <DropdownTrigger>
+                  <Avatar
+                    as="button"
+                    className="transition-transform"
+                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                  />
+                </DropdownTrigger>
+                <DropdownMenu
+                  aria-label="Profile Actions"
+                  variant="flat"
+                  topContent={
+                    <div className="pl-2">
+                      <p className="font-semibold">Signed in as</p>
+                      <p className="font-semibold">zoey@example.com</p>
+                    </div>
+                  }
+                >
+                  {
+                    navData.userMenu.map((item, index) =>
+                      <DropdownItem key={index}>
+                        {
+                          item.label === "Logout"
+                            ? <LogoutLink className="">Logout</LogoutLink>
+                            : <Link href={item.href}>{item.label}</Link>
+                        }
+                      </DropdownItem>
+                    )
+                  }
+                </DropdownMenu>
+              </Dropdown>
+              :
+              <LoginLink><Button variant="light">Login</Button></LoginLink>
+          }
         </NavbarItem>
         <NavbarItem>
-          <Button variant="light">Login</Button>
-        </NavbarItem>
-        <NavbarItem>
-            <Button className="p-0 sm:px-4 sm:py-1 bg-[var(--primary-color)] text-white font-bold min-w-[40px] w-[30px] sm:w-auto">
-              <span className="hidden sm:contents">Upload</span>
-              <span className="contents sm:hidden"><FaUpload width={90} /></span>
-            </Button>
+          <Button className="p-0 sm:px-4 sm:py-1 bg-[var(--primary-color)] text-white font-bold min-w-[40px] w-[30px] sm:w-auto">
+            <span className="hidden sm:contents">Upload</span>
+            <span className="contents sm:hidden"><FaUpload width={90} /></span>
+          </Button>
         </NavbarItem>
       </NavbarContent>
     </AppNavbar>

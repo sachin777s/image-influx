@@ -34,7 +34,7 @@ export const navData = {
             href: "/"
         },
         {
-            label: "Log Out",
+            label: "Logout",
             href: "/"
         }
     ]
