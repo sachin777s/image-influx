@@ -32,9 +32,9 @@ export default function EditProfile() {
                     value={"user@example.com"}
                 />
                 <Button
-                 type='submit'
-                 className='bg-[var(--primary-color)] text-white'
-                 >Update</Button>
+                    type='submit'
+                    className='bg-[var(--primary-color)] text-white'
+                >Update</Button>
             </form>
         </section>
     )

@@ -22,8 +22,8 @@ export default async function Profile({ params }: any) {
       </Button>
       <div className="mt-8 mb-0 md:mb-12 flex items-center justify-center gap-6 md:gap-12">
         <div className="flex flex-col items-center">
-          <span className="text-base text-center">Date</span>
-          <span className="text-[var(--secondary-text)] text-xl">12 Jul</span>
+          <span className="text-base text-center">Followers</span>
+          <span className="text-[var(--secondary-text)] text-xl">2K</span>
         </div>
         <span className="block h-[30px] w-[2px] bg-[var(--secondary-text)]"></span>
         <div className="flex flex-col items-center">
