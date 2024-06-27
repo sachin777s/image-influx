@@ -2,12 +2,8 @@ import UserProfileTabs from "@/components/UserProfileTabs";
 import { Avatar } from "@nextui-org/avatar";
 import { Button } from "@nextui-org/button";
 import { MdModeEdit } from "react-icons/md";
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
 export default async function Profile({ params }: any) {
-
-  const { getUser } = getKindeServerSession();
-  const user = await getUser();
 
   return (
     <section className="flex items-center flex-col">
@@ -15,7 +11,7 @@ export default async function Profile({ params }: any) {
         className="w-32 h-32"
         src="https://i.pravatar.cc/150?u=a04258114e29026302d"
       />
-      <span className="mt-6 text-4xl sm:text-5xl">{`${user?.given_name} ${user?.family_name}`}</span>
+      <span className="mt-6 text-4xl sm:text-5xl">Sachin Kumar</span>
       <Button radius="sm" className="mt-4 text-xl py-4 bg-[var(--primary-color)] text-white">
         <MdModeEdit />
         Edit Profile

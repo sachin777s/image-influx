@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@kinde-oss/kinde-auth-nextjs": "^2.1.13",
     "@nextui-org/image": "^2.0.24",
     "@nextui-org/react": "^2.2.9",
     "@vercel/postgres": "^0.7.2",

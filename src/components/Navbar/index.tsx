@@ -19,14 +19,12 @@ import Link from "next/link";
 import { Avatar } from "@nextui-org/avatar";
 import { FaCaretDown } from "react-icons/fa";
 import { FaUpload } from "react-icons/fa6";
-import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
-import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
-
-import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
+import { useState } from "react";
 
 export default function Navbar() {
 
-  const { isAuthenticated, isLoading } = useKindeBrowserClient();
+  const[isAuthenticated,setIsAuthenticated] = useState<boolean>(false);
+
 
   return (
     <AppNavbar maxWidth="2xl" isBordered className="min-w-0">
@@ -84,18 +82,14 @@ export default function Navbar() {
                   {
                     navData.userMenu.map((item, index) =>
                       <DropdownItem key={index}>
-                        {
-                          item.label === "Logout"
-                            ? <LogoutLink className="">Logout</LogoutLink>
-                            : <Link href={item.href}>{item.label}</Link>
-                        }
+                        <Link href={item.href}>{item.label}</Link>
                       </DropdownItem>
                     )
                   }
                 </DropdownMenu>
               </Dropdown>
               :
-              <LoginLink><Button variant="light">Login</Button></LoginLink>
+              <Button variant="light">Login</Button>
           }
         </NavbarItem>
         <NavbarItem>

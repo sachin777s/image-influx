@@ -1,0 +1,137 @@
+[33mcommit dd5140c8d871f49afea9580df6f522139132d55b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Mon Mar 18 21:43:58 2024 +0530
+
+    Unfollow api route is created
+
+[33mcommit a97303db430d6ca00a6cba730c5353c36320ba52[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Mon Mar 18 20:22:08 2024 +0530
+
+    Follow api route is created
+
+[33mcommit 13bb055ef5d125864b76212c65357cb2018c3790[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Sat Mar 16 15:41:35 2024 +0530
+
+    Register api route is created
+
+[33mcommit 994fc55fc3121a4c939a3267cb4a84a57035f68e[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Mon Mar 4 11:22:01 2024 +0530
+
+    Spelling fixed in profile page
+
+[33mcommit 9d2a1711119eddb3664d48a598f5ba44b9a8d473[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Sat Mar 2 21:52:24 2024 +0530
+
+    Middleware is created
+
+[33mcommit 9226628b8e595b44e766fc2f1f0955774055cc0f[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Tue Feb 20 22:15:43 2024 +0530
+
+    Kinde is configered
+
+[33mcommit 5100132d17ef90f0502f4e53fa6acbcf50c98cb0[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Fri Feb 16 22:30:32 2024 +0530
+
+    Profile Edit Page is created
+
+[33mcommit abad7e11d9afa9b96d1913cbaca7091dbf18e2e6[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Fri Feb 16 21:25:12 2024 +0530
+
+    Unused tab removed
+
+[33mcommit 4c0ece40764ed50d91d8aa761b31e81a7a87fe3f[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Fri Feb 16 21:00:29 2024 +0530
+
+    Profile Followers Tab is created
+
+[33mcommit 3bc6e62b89ab041c525a991faa157be9c4c679d7[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Fri Feb 16 19:23:47 2024 +0530
+
+    Profile Followings Tab is created
+
+[33mcommit 90bca46d34688c2cb3ec27947e586ba4e9606b1e[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Thu Feb 15 22:32:01 2024 +0530
+
+    Profile Videos Tab is created
+
+[33mcommit c1fbc313d1046b484370e5d6102128ee9f0d5162[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Thu Feb 15 22:28:31 2024 +0530
+
+    Profile Image Tab is created
+
+[33mcommit 8a6a58696c5d870bb0ad9bf26a08303df5e94010[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Thu Feb 15 22:10:38 2024 +0530
+
+    Profile Page is created
+
+[33mcommit 4fd5e6c6d2ea005936728de5a603b06fd1a2f148[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Thu Feb 15 18:58:26 2024 +0530
+
+    Videos page and videos slug are created
+
+[33mcommit e42dc150a6559c9fc9182a025dac9eb5d8dc4fe1[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Thu Feb 15 18:57:00 2024 +0530
+
+    Images page and images slug are created
+
+[33mcommit 8972bb31339c90fad8ca39e85580d7c880ee4535[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Sat Feb 10 21:31:26 2024 +0530
+
+    Cloudinary is configured
+
+[33mcommit 2ec5c9072f33bc7306d714bf255e9eae2642f399[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Wed Feb 7 17:49:47 2024 +0530
+
+    Media Videos Section is created
+
+[33mcommit b798b7011c3382ff17c15967aefabb00fc26130b[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Mon Feb 5 23:52:58 2024 +0530
+
+    Media Images Section is created
+
+[33mcommit edf9d90674eafcb039fb79759b43fd004a35af53[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Sat Feb 3 02:20:10 2024 +0530
+
+    Hero Section is created
+
+[33mcommit 464215a10db1230bc5673ebd75a0dd17fd1a5bd6[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Thu Feb 1 19:35:09 2024 +0530
+
+    Navbar is created
+
+[33mcommit 55d6c6fd2e3c2781f76e3429732a9feb9d3adf86[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Mon Jan 29 22:42:51 2024 +0530
+
+    README.md is cleaned
+
+[33mcommit fb6b7fffb9c83dff2ef7aea17b47513946190891[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Mon Jan 29 22:39:23 2024 +0530
+
+    Project is seted up
+
+[33mcommit 37006b4a3698066a4bab846bb47c7864b54e497f[m
+Author: Sachin Kumar <stdtech7878@gmail.com>
+Date:   Thu Jan 25 18:19:38 2024 +0530
+
+    Initial commit from Create Next App
