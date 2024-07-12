@@ -89,7 +89,7 @@ export default function Navbar() {
                 </DropdownMenu>
               </Dropdown>
               :
-              <Button variant="light">Login</Button>
+              <Button href="/auth/signup" as={Link} variant="light">Login</Button>
           }
         </NavbarItem>
         <NavbarItem>
